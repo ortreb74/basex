@@ -1,3 +1,0 @@
-CREATE DATABASE middleware
-OPEN middleware
-ADD TO tableaux.xml <tableau></tableau>
