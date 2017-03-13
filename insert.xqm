@@ -7,12 +7,19 @@ declare function f:pilot($e) {
         {
           $e/@*,
           $e/titre,
-          for $se in $e/* return f:pilot ($se)        
+          for $se in $e/* except titre return f:pilot ($se)        
         }
       </docNiv>
     ) else if ($e/self::ui) then (
-       $e//table
-    ) else (
+       <ui>
+        {
+          $e/@*,
+          for $se in $e/* return f:pilot ($se)
+        }
+       </ui>
+    ) else if ($e/self::table) then (
+       $e
+    )else (
       for $se in $e/* return f:pilot ($se)
     )
 };
