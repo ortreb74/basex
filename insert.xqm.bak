@@ -17,7 +17,7 @@ declare function f:pilot($e) {
        <ui>
         {
           $e/@*,
-          $e//table
+          for $se in $e/* return f:pilot ($se)
         }
        </ui>
     ) else if ($e/self::table) then (
