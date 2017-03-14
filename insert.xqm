@@ -1,13 +1,16 @@
 module namespace f='f';
 
 declare function f:pilot($e) {
+
+(: on copie le titre et les ui mais pas pour la même raison :)
   
     if ($e/self::docNiv) then (
       <docNiv>        
         {
           $e/@*,
           $e/titre,
-          for $se in $e/* except titre return f:pilot ($se)        
+          (: no context value bound:)
+          for $se in $e/* return f:pilot ($se)        
         }
       </docNiv>
     ) else if ($e/self::ui) then (
