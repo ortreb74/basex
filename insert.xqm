@@ -3,8 +3,9 @@ module namespace f='f';
 declare function f:pilot($e) {
 
 (: on copie le titre et les ui mais pas pour la même raison :)
+       
   
-    if ($e/self::docNiv) then (
+    if ($e/self::docNiv[exists(descendant::table)]) then (
       <docNiv>        
         {
           $e/@*,
@@ -13,7 +14,7 @@ declare function f:pilot($e) {
           for $se in $e/* return f:pilot ($se)        
         }
       </docNiv>
-    ) else if ($e/self::ui) then (
+    ) else if ($e/self::ui[exists(descendant::table)]) then (
        <ui>
         {
           $e/@*,
@@ -23,7 +24,7 @@ declare function f:pilot($e) {
     ) else if ($e/self::table) then (
        $e
     )else (
-      for $se in $e/* return f:pilot ($se)
+      for $se in $e/*[exists(descendant::table)] return f:pilot ($se)
     )
 };
 
