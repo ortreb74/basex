@@ -4,27 +4,20 @@ declare function f:pilot($e) {
 
 (: on copie le titre et les ui mais pas pour la même raison :)
        
-  
-    if ($e/self::docNiv[exists(descendant::table)]) then (
-      <docNiv>        
+(: la syntaxe * ! :)    
+(: la création d'un élément avec element ! :) 
+    if ($e/self::*[local-name()=("ui","docNiv","infoCommentaire","infoChiffres","infoQuestionsReponses")][exists(descendant::table)]) then (
+       element {$e/name()}
         {
           $e/@*,
           $e/titre,
-          (: no context value bound:)
-          for $se in $e/* return f:pilot ($se)        
+          for $se in $e/*[exists(descendant::table)] return f:pilot ($se)
         }
-      </docNiv>
-    ) else if ($e/self::ui[exists(descendant::table)]) then (
-       <ui>
-        {
-          $e/@*,
-          $e//table
-        }
-       </ui>
     ) else if ($e/self::table) then (
        $e
     )else (
-      for $se in $e/*[exists(descendant::table)] return f:pilot ($se)
+(: descendant-or-self ! :)       
+      for $se in $e/*[exists(descendant-or-self::table)] return f:pilot ($se)      
     )
 };
 
