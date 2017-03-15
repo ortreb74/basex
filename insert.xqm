@@ -6,11 +6,12 @@ declare function f:pilot($e) {
        
 (: la syntaxe * ! :)    
 (: la création d'un élément avec element ! :) 
-    if ($e/self::*[local-name()=("ui","docNiv","infoCommentaire","infoChiffres","infoQuestionsReponses")][exists(descendant::table)]) then (
+    if ($e/self::*[local-name()=("ua","ui","docNiv","infoCommentaire","infoChiffres","infoQuestionsReponses")][exists(descendant::table)]) then (
        element {$e/name()}
         {
           $e/@*,
           $e/titre,
+          $e/titreUa,
           for $se in $e/*[exists(descendant::table)] return f:pilot ($se)
         }
     ) else if ($e/self::table) then (
@@ -23,13 +24,6 @@ declare function f:pilot($e) {
 
 declare function f:process() { 
    for $revue in collection("revues_xml")/doc
-     let $titre := $revue/metadonnees/metaCommunes/metaQualif/titreCalcule/text()
-     return 
-     <docNiv>
-       <titre>{$titre}</titre>
-       {
-       for $docNiv in $revue//docNiv[empty(ancestor::docNiv)]
-         return f:pilot($docNiv)     
-       }
-     </docNiv>   
+     (: let $titre := $revue/metadonnees/metaCommunes/metaQualif/titreCalcule/text() :)
+     return f:pilot($revue)
 };
