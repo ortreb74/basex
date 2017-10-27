@@ -1,0 +1,4 @@
+create database ant
+add c:/bin-local/efl3_metas/build.xml
+
+

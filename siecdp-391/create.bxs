@@ -1,0 +1,5 @@
+create database elwork
+add y:/jira/siecdp-391/tra/z5m28.tra.sgm.xml
+add y:/jira/siecdp-391/optj/z5m28.optj.sgm.xml
+add y:/jira/siecdp-391/opt/z5m28.opt.sgm.xml
+

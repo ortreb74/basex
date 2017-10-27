@@ -1,0 +1,3 @@
+create database papi-mc
+add c:/data/efl3_metas/work/input-meta
+add to papi-mc.xml c:/data/efl3_metas/work/papi-ur/rjf1607cx.xml 
