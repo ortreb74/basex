@@ -1,0 +1,1 @@
+for $node in //NIV1 return count($node/preceding::NIV1)

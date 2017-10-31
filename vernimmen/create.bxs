@@ -1,0 +1,4 @@
+create database vernimmen
+add to merged i:/jira/siechaine-52/round2/2018-20170904/composite/integral/DallozVernimmen.xml
+add to result i:/jira/siechaine-52/round2/20171031-1/DallozVernimmen.xml
+
