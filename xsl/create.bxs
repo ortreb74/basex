@@ -1,0 +1,2 @@
+create database xsl-meta
+add c:/bin-local/efl3_metas-2.18.05/add-meta/titres.xsl

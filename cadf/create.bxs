@@ -1,0 +1,3 @@
+create database cadf
+add to source_ir i:/jira/siechaine-179/mission/cadfir_tra.xml
+add to source_ir i:/jira/siechaine-179/mission/cadfenr.xml

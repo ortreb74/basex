@@ -1,3 +1,7 @@
+count(//motrep[motrep]),
+count(//EXERCICE[.//PARA]),
+count(//lst),
+count(//lst[al]),
 count(//PEDAGO),
 count(//@ID),
 count(//sec[exists(@id)]),
