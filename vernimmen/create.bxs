@@ -1,4 +1,9 @@
 create database vernimmen
-add to merged i:/jira/siechaine-52/round2/2018-20170904/composite/integral/DallozVernimmen.xml
-add to result i:/jira/siechaine-52/round2/20171031-1/DallozVernimmen.xml
+add to merged i:/jira/siechaine-52/round2/20171108-2/2018-20170904/composite/integral/DallozVernimmen.xml
+add to r1 i:/jira/siechaine-52/round5/20171123-3/vernimmen_tra.xml
+add to result i:/jira/siechaine-52/round5/20171123-4/vernimmen_tra.xml
+add to bc i:/jira/siechaine-52/round5/basecofinance_trasorerie_entreprise_E8.xml
+add to bc-2017 i:/jira/siechaine-52/round6/basecofinance_tresorerie_entreprise.2017.xml
+add to bc-2018 i:/jira/siechaine-52/round6/basecofinance_tresorerie_entreprise.2018.xml
+
 

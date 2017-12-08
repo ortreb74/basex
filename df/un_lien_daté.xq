@@ -1,0 +1,1 @@
+ //REFDOC2[starts-with(@NATURE,"BOI") and @DATE = "06/09/2017"]/parent::*
