@@ -1,0 +1,1 @@
+doc("collection/collection.xml")//niv1[@code="BOFIP"]//book[not(starts-with(@key,"TALPHA"))]/substring(data(@key),6)

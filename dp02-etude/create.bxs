@@ -1,0 +1,4 @@
+create database dp02-etude
+add y:/jira/siecdp-410/z2236.tra.sgm.xml
+add y:/jira/siecdp-410/z2236.opt.sgm.xml
+add y:/jira/siecdp-410/z2236.optj.sgm.xml
