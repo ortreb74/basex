@@ -1,0 +1,1 @@
+doc("baseCoOut/basecoperformance_fiscale-d.xml")//pNonNum[@id="TCB1806-493173"]

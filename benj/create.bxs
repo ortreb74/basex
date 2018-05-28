@@ -1,0 +1,3 @@
+create database benji
+add to src i:/jira/siechaine-291/bal/ms_fus.xml
+add to tgt i:/jira/siechaine-291/bal/ms.xml

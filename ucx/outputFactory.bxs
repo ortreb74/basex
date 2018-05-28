@@ -1,0 +1,3 @@
+create database outputFactory
+add to map.xml <map/>
+add to m2.xml <r/>

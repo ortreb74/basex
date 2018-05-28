@@ -1,0 +1,14 @@
+create database baseCoIn
+add i:/bas/20180426/basecoperformance_fiscale.xml 
+add i:/bas/20180426/basecoperformance_fiscale-d.xml 
+
+create database baseCoOut
+add i:/bas/20180427/basecoperformance_fiscale.xml 
+add i:/bas/20180427/basecoperformance_fiscale-d.xml 
+add i:/bas/20180427/basecoperformance_fiscale-d2.xml 
+
+CREATE DATABASE contenusInduits
+ADD TO  form-induits.xml <ACTES></ACTES>
+ADD TO  intra-induits.xml <IntraOuvrages></IntraOuvrages>
+ADD TO  actu-induits.xml <Actualisation></Actualisation>
+ADD TO  simu-induits.xml <Simulateurs></Simulateurs>

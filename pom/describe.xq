@@ -1,0 +1,1 @@
+for $node in collection("pom") return db:path($node)

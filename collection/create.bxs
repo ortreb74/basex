@@ -1,2 +1,3 @@
 create database collection
-add to collection.xml q:/4/collection-tnr.xml
+# add to collection.xml q:/4/collection-tnr.xml 
+add i:/bas/L/collection/collection.xml
