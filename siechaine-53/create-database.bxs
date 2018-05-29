@@ -1,0 +1,11 @@
+create database siechaine-253
+add to cc003.bu.xml c:/w/data/cc003.bu.xml
+add to cc003.livraison.xml c:/w/data/cc003.livraison.xml
+add to y5003.bu.xml c:/w/data/y5003optj.bu.xml
+add to y5003.livraison.xml c:/w/data/y5003optj.livraison.xml
+add to bpat1306.bu.xml c:/w/data/bpat1306.bu.xml
+add to bpat1306.livraison.xml c:/w/data/bpat1306.livraison.xml
+add to settings.xml c:/w/data/maven/settings.xml
+add to mode.xml c:/w/data/mode.config.xml
+add to stock.xml c:/w/data/stock.config.xml
+add c:/w/data/y5003optj.xml
